@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tic Tac Toe | Game Time</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="game.css">
+</head>
+<body onload="startGame();">
+	<h1>Tic Tac Toe </h1>
+	<!-- To start the game -->
+	<div id="start">
+		<img id="img" src="game.jpg">
+		<br>
+		<button id="startgame" onclick="clickButton();">Start Game!</button>
+	</div>
+
+	<!-- Actual Game -->
+	<div id="game" style="display: none;">
+		<p id="msg"></p>
+		<table id="phase">
+			<tr>
+				<td id="s1" onclick="myTurn(this);" class="square"></td>
+				<td id="s2" onclick="myTurn(this);" class="bord square"></td>
+				<td id="s3" onclick="myTurn(this);" class="square"></td>
+			</tr>
+			<tr id="prop">
+				<td id="s4" onclick="myTurn(this);" class="square"></td>
+				<td id="s5" onclick="myTurn(this);" class="bord square"></td>
+				<td id="s6" onclick="myTurn(this);" class="square"></td>
+			</tr>
+			<tr>
+				<td id="s7" onclick="myTurn(this);" class="square"></td>
+				<td id="s8" onclick="myTurn(this);" class="bord square"></td>
+				<td id="s9" onclick="myTurn(this);" class="square"></td>
+			</tr>
+		</table>
+		<button id="reset" onclick="startGame()">Reset</button>
+	</div>
+	<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
